@@ -1,0 +1,4 @@
+[submodule "js/libs/tracery"]
+	path = js/libs/tracery
+	url = https://github.com/galaxykate/tracery.git
+	branch = tracery2
