@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    tracery.setRng(getDateSeed);
+    tracery.setRng(getDateSeed());
     var grammar = tracery.createGrammar({
         'noun': nouns,
         'adjective': adjectives,
@@ -13,5 +13,5 @@ $(document).ready(function() {
 function getDateSeed() {
     let today = new Date();
     let todayUtc = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 0, 0, 0);
-    return 1 / todayUtc;
+    return new Math.seedrandom(today.toDateString());
 }
