@@ -1,9 +1,16 @@
 $(document).ready(function() {
     tracery.setRng(getDateSeed());
     var grammar = tracery.createGrammar({
-        'noun': nouns,
+        'noun': objects,
         'adjective': adjectives,
-        'origin': ['#adjective.a# #noun#.'],
+        'phrase': [
+            '#adjective.a# #noun#',
+            'the smell of #adjective.a# #noun#'
+        ],
+        'origin': [
+            '#phrase.capitalize# and #phrase#',
+            '#phrase.capitalize#'
+        ]
     });
 
     grammar.addModifiers(baseEngModifiers);
@@ -12,6 +19,5 @@ $(document).ready(function() {
 
 function getDateSeed() {
     let today = new Date();
-    let todayUtc = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 0, 0, 0);
     return new Math.seedrandom(today.toDateString());
 }
