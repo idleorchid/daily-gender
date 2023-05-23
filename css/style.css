@@ -7,4 +7,16 @@ body {
     background: linear-gradient(180deg, rgba(103, 41, 145, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(41, 110, 40, 1) 100%);
     background-repeat: no-repeat;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-header {
+    background-color: rgba(255, 255, 255, 0.25);
+    ;
+}
+
+.card {
+    margin: 2rem auto auto;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
 }
