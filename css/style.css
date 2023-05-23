@@ -12,11 +12,25 @@ body {
 
 .card-header {
     background-color: rgba(255, 255, 255, 0.25);
+    padding: 2rem;
     ;
 }
 
+.card-body {
+    padding: 2rem;
+}
+
 .card {
-    margin: 2rem auto auto;
-    margin-top: 2rem;
+    margin: 2rem auto 0rem;
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.card-text {
+    font-size: 1.5rem;
 }
